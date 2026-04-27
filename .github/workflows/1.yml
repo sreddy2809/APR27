@@ -10,7 +10,5 @@ jobs:
     - name: OS Details
       shell: bash
       run: | 
-        git clone https://github.com/sreddy2809/APR27.git
-        ls -l
-        docker info 
+        terraform --version 
         mvn -v
