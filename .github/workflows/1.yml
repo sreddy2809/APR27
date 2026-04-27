@@ -10,6 +10,6 @@ jobs:
     - name: OS Details
       shell: bash
       uses: hashicorp/setup-terraform@v4
-      run: | 
+    - run: | 
         terraform --version 
         mvn -v
