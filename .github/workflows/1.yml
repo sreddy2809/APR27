@@ -5,6 +5,10 @@ jobs:
     name: This is New Job
     runs-on: ubuntu-latest
     steps:
+    - name: setup terraform 
+      uses: hashicorp/setup-terraform@v4
+      with:
+      - terraform_version: "1.14.6"
     - name: docker login
       run: |
-         docker login -u svreddyaws56 -p Omguru0528#D
+         terraform --version
