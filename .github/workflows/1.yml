@@ -8,7 +8,7 @@ jobs:
     - name: setup terraform 
       uses: hashicorp/setup-terraform@v4
       with:
-        terraform_version: "1.14.6"
+        terraform_version: "1.14.9"
     - name: Check version
       run: |
          terraform --version
