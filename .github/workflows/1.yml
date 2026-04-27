@@ -12,4 +12,7 @@ jobs:
     - name: This is step1
       run : ls -alrt
     - name: OS Details
-      run: hostnamectl     
+      run: 
+      pwd| 
+      hostnamectl
+      ls -l 
