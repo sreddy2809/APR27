@@ -9,6 +9,7 @@ jobs:
       run : ls -alrt
     - name: OS Details
       shell: bash
+      uses: hashicorp/setup-terraform@v4
       run: | 
         terraform --version 
         mvn -v
