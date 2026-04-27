@@ -13,3 +13,4 @@ jobs:
         git clone https://github.com/sreddy2809/APR27.git
         ls -l
         docker info 
+        mvn -v
