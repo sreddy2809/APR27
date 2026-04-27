@@ -5,16 +5,6 @@ jobs:
     name: This is New Job
     runs-on: ubuntu-latest
     steps:
-    - name: This is step1
-      run : ls -alrt
-    - name: upload artifact
-      run: echo "Todays date is $(date)">f1.txt
-    - name: Upload the file
-      uses: actions/upload-artifact@v7 
-      with:
-        path: f1.txt      
-    - name: OS Details
-      uses: hashicorp/setup-terraform@v4
-    - run: | 
-        terraform --version 
-    
+    - name: docker login
+      run: |
+         docker login -u svreddyaws56 -p Omguru0528#D
