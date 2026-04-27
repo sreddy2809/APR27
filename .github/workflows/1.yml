@@ -10,7 +10,9 @@ jobs:
     - name: upload artifact
       run: echo "Todays date is $(date)">f1.txt
     - name: Upload the file
-      uses: @actions/upload-artifact    
+      uses: @actions/upload-artifact 
+      with:
+        path: f1.txt      
     - name: OS Details
       uses: hashicorp/setup-terraform@v4
     - run: | 
