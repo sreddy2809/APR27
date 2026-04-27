@@ -8,7 +8,6 @@ jobs:
     - name: This is step1
       run : ls -alrt
     - name: OS Details
-      shell: bash
       uses: hashicorp/setup-terraform@v4
     - run: | 
         terraform --version 
