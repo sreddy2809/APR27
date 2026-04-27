@@ -1,12 +1,8 @@
 name: My First Test Workflow
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: This Hello Msg
-      run: echo "Hello Sheshi"
   deploy:
+    name: This is New Job
     runs-on: ubuntu-latest
     steps:
     - name: This is step1
