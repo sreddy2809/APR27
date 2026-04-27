@@ -13,6 +13,6 @@ jobs:
       run : ls -alrt
     - name: OS Details
       run: | 
-      pwd
-      hostnamectl
-      ls -l 
+        pwd
+        hostnamectl
+        ls -l 
