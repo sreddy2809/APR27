@@ -7,7 +7,12 @@ jobs:
     steps:
     - name: This is step1
       run : ls -alrt
-    - uses: hashicorp/setup-terraform@v4
+    - name: upload artifact
+      run: echo "Todays date is $(date)">f1.txt
+    - name: Upload the file
+      uses: @actions/upload-artifact    
+    - name: OS Details
+      uses: hashicorp/setup-terraform@v4
     - run: | 
         terraform --version 
-        mvn -v
+    
