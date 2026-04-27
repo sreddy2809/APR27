@@ -1,0 +1,15 @@
+name: My First Test Workflow
+on: push
+jobs:
+  build:
+    runner: ubuntu-latest
+    steps:
+    - name: This Hello Msg
+      run: echo "Hello Sheshi"
+  deploy:
+    runner: ubuntu-latest
+    steps:
+    - name: This is step1
+      run : ls -alrt
+    - name: OS Details
+      run: hostnamectl     
