@@ -2,12 +2,12 @@ name: My First Test Workflow
 on: push
 jobs:
   build:
-    runner: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: This Hello Msg
       run: echo "Hello Sheshi"
   deploy:
-    runner: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: This is step1
       run : ls -alrt
